@@ -2,7 +2,7 @@
 <script>
     // import { MetaTags } from 'svelte-meta-tags';
     import Hero from "../FrontendComponents/HomePage/Main.svelte";
-    import WhySvARIA from "../FrontendComponents/HomePage/WhySvARIA.svelte";
+    import WhySvARIA from "../FrontendComponents/HomePage/WhySvaria.svelte";
     import GettingStarted from "../FrontendComponents/HomePage/GettingStarted.svelte";
     import News from "../FrontendComponents/HomePage/News.svelte";
 </script>

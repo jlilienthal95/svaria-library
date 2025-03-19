@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { ariaLabelcheck, colorContrastCheck, parentColorContrastCheck } from './ARIAchecks.js';
 	import Button from './Button.svelte';
 	import type { FormElementsObj } from '../types.js';
 

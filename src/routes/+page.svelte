@@ -12,6 +12,7 @@
     <WhySvARIA />
     <GettingStarted />
     <News />
+    <div></div>
 </main>
 
 <MetaTags

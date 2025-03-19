@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { ariaLabelcheck, colorContrastCheck, parentColorContrastCheck } from './ARIAchecks.js';
 	// import type { ButtonType } from '../types.js';
 	export let content: string = 'This is a button';
 	export let ariaLabel: string = content;
@@ -10,9 +9,6 @@
 </script>
 
 <button
-	use:ariaLabelcheck
-	use:colorContrastCheck
-	use:parentColorContrastCheck
 	{id}
 	aria-label={ariaLabel}
 	class={className}

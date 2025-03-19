@@ -18,8 +18,6 @@
 	aria-label={heading}
 	{id}
 	{style}
-	use:colorContrastCheck
-	use:ariaLabelcheck
 >
 	<div
 		aria-label="header container"
@@ -40,7 +38,6 @@
 					aria-label={`link to ${linkElem.name}`}
 					style={linkElem.linkStyle}
 					on:click={linkElem.onClick}
-					use:colorContrastCheck
 				>
 					{linkElem.name}
 				</a>

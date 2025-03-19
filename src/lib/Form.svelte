@@ -41,7 +41,6 @@
 	aria-label={ariaLabel}
 	class={formClass}
 	style={formStyle}
-	use:ariaLabelcheck
 >
 	{#each formElements as element}
 		<label
@@ -49,8 +48,6 @@
 			for={element.inputId}
 			style={element.labelStyle ? element.labelStyle : groupLabelStyle}
 			class={element.labelClass ? element.labelClass : groupLabelClass}
-			use:ariaLabelcheck
-			use:colorContrastCheck
 			aria-label={element.ariaLabel}>{element.labelValue}</label
 		>
 		{#if element.type === 'textarea'}
@@ -60,8 +57,6 @@
 				id={element.inputId}
 				style={element.inputStyle ? element.inputStyle : groupInputStyle}
 				class={element.inputClass ? element.inputClass : groupInputClass}
-				use:ariaLabelcheck
-				use:colorContrastCheck
 			/>
 		{:else}
 			<input
@@ -71,8 +66,6 @@
 				id={element.inputId}
 				style={element.inputStyle ? element.inputStyle : groupInputStyle}
 				class={element.inputClass ? element.inputClass : groupInputClass}
-				use:ariaLabelcheck
-				use:colorContrastCheck
 			/>
 		{/if}
 	{/each}

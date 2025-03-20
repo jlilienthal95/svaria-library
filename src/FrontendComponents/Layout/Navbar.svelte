@@ -44,7 +44,7 @@
 			<a href="/">
 				<img class="min-w-[250px] h-[125px] w-[250px] smallLogo" alt="SvARIA Logo" src="/SvAriaLogo.png" />
 			</a>
-			<button on:click={() => ($openModal = true)} class="lg:hidden">
+			<button on:click={() => ($openModal = true)} class="lg:hidden" aria-label="Open Menu">
 				<div class="fa-solid fa-bars fa-2xl mt-6"></div>
 			</button>
 		</div>

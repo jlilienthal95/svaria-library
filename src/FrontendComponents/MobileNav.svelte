@@ -24,8 +24,9 @@
                     console.log('clicked');
                 }}
                 class="outline-none border-none"
+                aria-label = "Example Button"
             >
-                <i class="fa-solid fa-xmark text-2xl"> </i>
+                <i class="fa-solid fa-xmark text-2xl"></i>
             </button>
         </div>
         <div class="flex flex-col gap-4 flex-1">
@@ -34,7 +35,7 @@
                 class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
             >
                 <p class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
-                    Why SvARIA <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                    Why SvARIA <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
                 </p>
             </button>
             <button
@@ -42,7 +43,7 @@
                 class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
             >
                 <p class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
-                    Getting Started <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                    Getting Started <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
                 </p>
             </button>
             <button
@@ -50,7 +51,7 @@
                 class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
             >
                 <p class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
-                    Components <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                    Components <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
                 </p>
             </button>
             <button
@@ -58,7 +59,7 @@
                 class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
             >
                 <p class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
-                    GitHub <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                    GitHub <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
                 </p>
             </button>
             <button
@@ -66,7 +67,7 @@
                 class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
             >
                 <p class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
-                    News <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                    News <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
                 </p>
             </button>
         </div>

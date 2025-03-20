@@ -26,7 +26,7 @@
             <div id='contactReport' class="flex mt-6 md:mr-16 flex-col smallScreen items-center" >
                 <a href="https://github.com/oslabs-beta/SvARIA/issues" 
                     class="cursor-pointer duration-200"
-                    alt="Report an issue" target="_blank" title="Report an issue">
+                    target="_blank" title="Report an issue">
                     <p id='reportLandscape' class="poppins text-md text-white sm:text-lg hover:text-indigo-400 " >
                         Report an issue
                     </p>
@@ -34,7 +34,7 @@
                 <div class="flex flex-col gap-4">
                     <a href="mailto:svarialibrary@gmail.com"
                     class="cursor-pointer text-white duration-200"
-                    alt="svarialibrary@gmail.com" target="_blank" title="Contact us">
+                    target="_blank" title="Contact us">
                     <p id='contactLandscape' class="poppins text-base text-white sm:text-lg hover:text-indigo-400 ">Contact Us</p>
                     </a>
                 </div>
@@ -44,35 +44,35 @@
         <div id='socialLinks' class="hidden md:flex md:w-fit w-full md:flex-col md:justify-normal justify-around flex-row gap-4">
             <a href="https://www.linkedin.com/company/svaria"
             class="cursor-pointer text-white hover:text-indigo-400 duration-200"
-            alt="LinkedIn" target="_blank" title="SvARIA LinkedIn">
-            <i class="fa-brands fa-linkedin text-white pr-2"/> LinkedIn </a>
+            target="_blank" title="SvARIA LinkedIn">
+            <i class="fa-brands fa-linkedin text-white pr-2"></i> LinkedIn </a>
             
             <a href="https://github.com/oslabs-beta/SvARIA"
             class="cursor-pointer text-white hover:text-indigo-400 duration-200"
-            alt="Github" target="_blank" title="SvARIA GitHub">
-            <i class="fa-brands text-white fa-github pr-2"/> GitHub </a>
+            target="_blank" title="SvARIA GitHub">
+            <i class="fa-brands text-white fa-github pr-2"></i> GitHub </a>
             
             <a href="https://www.youtube.com/@SvARIA-Toolkit"
             class="cursor-pointer text-white hover:text-indigo-400 duration-200"
-            alt="YouTube" target="_blank" title="SvARIA YouTube">
-            <i class="fa-brands text-white fa-youtube pr-2"/> YouTube </a>
+            target="_blank" title="SvARIA YouTube">
+            <i class="fa-brands text-white fa-youtube pr-2"></i> YouTube </a>
         </div>
 
         <div id='socialLinks' class="md:hidden flex md:w-fit w-full md:flex-col md:justify-normal justify-around flex-row gap-4">
             <a href="https://www.linkedin.com/company/svaria"
             class="cursor-pointer text-white hover:text-indigo-400 duration-200"
-            alt="LinkedIn" target="_blank" title="SvARIA LinkedIn">
-            <i class="fa-brands fa-linkedin text-white pr-2"/> LinkedIn </a>
+            target="_blank" title="SvARIA LinkedIn">
+            <i class="fa-brands fa-linkedin text-white pr-2"></i> LinkedIn </a>
             
             <a href="https://github.com/oslabs-beta/SvARIA"
             class="cursor-pointer text-white hover:text-indigo-400 duration-200"
-            alt="Github" target="_blank" title="SvARIA GitHub">
-            <i class="fa-brands text-white fa-github pr-2"/> GitHub </a>
+            target="_blank" title="SvARIA GitHub">
+            <i class="fa-brands text-white fa-github pr-2"></i> GitHub </a>
             
             <a href="https://www.youtube.com/@SvARIA-Toolkit"
             class="cursor-pointer text-white hover:text-indigo-400 duration-200"
-            alt="YouTube" target="_blank" title="SvARIA YouTube">
-            <i class="fa-brands text-white fa-youtube pr-2"/> YouTube </a>
+            target="_blank" title="SvARIA YouTube">
+            <i class="fa-brands text-white fa-youtube pr-2"></i> YouTube </a>
         </div>
         
     </div>

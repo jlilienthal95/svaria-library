@@ -1,7 +1,7 @@
 <script>
     import "../app.css";
     // import ChatBotContainer from './components/lib/ChatBotContainer.svelte';
-	import MobileNav from "../FrontendComponents/MobileNav.svelte";
+	import MobileNav from "../FrontendComponents/Layout/MobileNav.svelte";
     import Navbar from "../FrontendComponents/Layout/Navbar.svelte";
     import Footer from "../FrontendComponents/Layout/Footer.svelte";
 	let { children } = $props();

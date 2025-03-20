@@ -1,5 +1,5 @@
 <script lang="ts">
-	// import type { ButtonType } from '../types.js';
+	import type { ButtonType } from '../types.js';
 	export let content: string = 'This is a button';
 	export let ariaLabel: string = content;
 	export let id: string = '';

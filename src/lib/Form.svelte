@@ -56,7 +56,7 @@
 				id={element.inputId}
 				style={element.inputStyle ? element.inputStyle : groupInputStyle}
 				class={element.inputClass ? element.inputClass : groupInputClass}
-			/>
+			></textarea>
 		{:else}
 			<input
 				type={element.type}

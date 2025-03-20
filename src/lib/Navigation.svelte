@@ -1,5 +1,5 @@
 <script lang="ts">
-	// import type { Routes } from '../types.js';
+	import type { Routes } from '../types.js';
 	export let heading: string | undefined = undefined;
 	export let routes: Routes[] | undefined = undefined;
 	export let id: string = 'navBar';

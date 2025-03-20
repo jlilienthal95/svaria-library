@@ -1,16 +1,18 @@
-This is where the 'Getting Started" info lives
-
 <script>
 	async function handleClick() {
 		try {
 			await navigator.clipboard.writeText('npm install svaria-toolkit');
+			const copyButton = document.getElementById('toolTip');
+			if(copyButton){
+				copyButton.textContent = "copied!"
+			}
 		} catch (e) {
 			console.error('Error copying to clipboard');
 		}
 	}
 </script>
 
-<div id="GettingStarted" class="flex flex-col gap-5 sm:gap-10 md:gap-15 flex-1 items-center justify-center md:pt-[15rem] pt-[8rem] md:px-0 px-3">
+<div id="GettingStarted" class="flex flex-col gap-5 sm:gap-10 md:gap-15 items-center justify-center pt-[15vh] px-3">
 	<div class="flex flex-col gap-2">
 		<h4
 			class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center mobileTitle"
@@ -56,57 +58,37 @@ This is where the 'Getting Started" info lives
 			Then, install SvARIA using the following command:
 		</p>
 	</h5>
-	<div
-		class="pt-4 rounded-lg sm:rounded-xl rounded-md leading-[21px] relative z-10 flex w-3/4 max-h-[inherit] text-m text-black dark:text-white border border-black/[15%] ml-auto mr-auto dark:border-gray-650 bg-black dark:bg-gray-850"
-	>
-		<code class="w-full grid h-9"
-			><div
-				class=" pl-4 px-4 pr-14 sm:pl-[26px] block dark:hidden"
-			>
-				<span class="" style="color: rgb(121, 94, 38);">npm</span><span
-					class=""
-					style="color: rgb(0, 0, 0);"
+	<div class="pt-4 rounded-lg leading-[21px] relative z-10 flex md:w-3/4 w-[85vw] text-black dark:text-white border border-black/[15%] ml-auto mr-auto dark:border-gray-650 bg-black dark:bg-gray-850">
+		<code class="w-full grid h-9">
+			<div class="flex flex-row justify-between px-4">
+				<div>
+					<span style="color: rgb(220, 220, 170);">npm</span>
+					<span style="color: rgb(206, 145, 120);">install svaria-toolkit</span>
+				</div>
+				<button
+					on:click={handleClick}
+					id="clipBoardButton"
+					class="flex flex-row rounded-md text-sm gap-2 text-black/75 hover:bg-black/[7.5%] hover:text-black dark:text-white/75 dark:hover:bg-white/5 dark:hover:text-white"
+					type="button"
 				>
-				</span><span class="" style="color: rgb(163, 21, 21);">install</span><span
-					class=""
-					style="color: rgb(0, 0, 0);"
-				>
-				</span><span class="" style="color: rgb(163, 21, 21);">svaria-toolkit</span>
-			</div>
-			<div class=" pl-4 px-4 pr-14 sm:pl-[26px] hidden dark:block">
-				<span class="" style="color: rgb(220, 220, 170);">npm </span><span
-					class=""
-					style="color: rgb(212, 212, 212);"
-				>
-				</span><span class="" style="color: rgb(206, 145, 120);">install </span><span
-					class=""
-					style="color: rgb(212, 212, 212);"
-				>
-				</span><span class="" style="color: rgb(206, 145, 120);">svaria-toolkit</span>
+					<span id="toolTip">copy to clipboard</span>
+		
+					<svg
+						fill="none"
+						viewBox="0 0 25 25"
+						stroke="currentColor"
+						stroke-width="1.5"
+						class="h-5 w-5"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+						>
+						</path>
+					</svg>
+				</button>
 			</div>
 		</code>
-		<button
-			on:click={handleClick}
-			id="clipBoardButton"
-			class="right-2 top-2 z-[11] h-[37px] rounded-md bg-transparent px-3 text-sm text-black/75 hover:bg-black/[7.5%] hover:text-black dark:text-white/75 dark:hover:bg-white/5 dark:hover:text-white absolute"
-			type="button"
-		>
-			<span id="toolTip"> Copy to clipboard </span>
-
-			<svg
-				fill="none"
-				viewBox="0 0 25 25"
-				stroke="currentColor"
-				stroke-width="1.5"
-				class="h-5 w-5"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-				>
-				</path>
-			</svg>
-		</button>
 	</div>
 </div>

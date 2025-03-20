@@ -2,7 +2,7 @@
 	import Button from './Button.svelte';
 	import type { FormElementsObj } from '../types.js';
 
-	export let method: string = 'POST';
+	export let method: "get" | "post" | "dialog" = "post";
 	export let formId: string = '';
 	export let submitFormContent: string = 'Submit';
 	export let submitButtonId: string = 'submit';
@@ -11,7 +11,7 @@
 	export let formClass: string = '';
 	export let formStyle: string = '';
 	export let submitButtonClass: string =
-		'bg-black text-white text-bold hover:bg-gray-700 rounded py-2 px-4 rounded';
+		'bg-black text-white text-bold hover:bg-gray-700 rounded py-2 px-4 rounded cursor-pointer';
 	export let submitButtonStyle: string = '';
 	export let groupLabelClass: string = 'block mx-4 text-sm font-medium text-grey-800';
 	export let groupInputClass: string =

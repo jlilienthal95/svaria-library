@@ -9,7 +9,7 @@
 
 <MobileNav />
 
-<div class="top-0 left-0 w-full flex flex-col z-20 px-4">
+<div class="top-0 left-0 w-full flex flex-col z-20">
 	<Navbar />
 </div>
 

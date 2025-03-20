@@ -1,1 +1,57 @@
 @import 'tailwindcss';
+
+
+.noScroll {
+    overflow: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+}
+
+.noScroll::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.text-theme-blue {
+    color: #04abdb;
+}
+
+.text-theme-darkBlue {
+    color: #143d66;
+}
+
+
+@media (max-width: 639px) {
+    .xsText {
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 422px) {
+    .xsText {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+@keyframes wiggleSm {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+    75% { transform: rotate(-4deg); }
+    100% {transform: rotate(0deg);}
+}
+
+.animate-wiggleSm-hover {
+    display: inline-block;
+    animation: wiggleSm 2 0.5s ease-in-out;
+}

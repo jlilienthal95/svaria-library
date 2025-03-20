@@ -2,9 +2,7 @@
 <script lang="ts">
 	import Form from '../../lib/Form.svelte';
 
-	let firstName = '';
-	let lastName = '';
-	let email = '';
+	const headingText = "text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto font-semibold text-center "
 
 	let formElements = [
 		{
@@ -38,59 +36,57 @@
 		}
 	];
 
-	async function formSubmit(e) {
+	async function formSubmit(e:Event) {
 		e.preventDefault();
-		const form = e.currentTarget;
-		const first_Name = form.firstName.value.trim();
-		const last_Name = form.lastName.value.trim();
-		const email_ = form.email.value.trim();
-		form.firstName.value='';
-		form.lastName.value='';
-		form.email.value='';
-		try {
-			const response = await fetch('/user', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({
-					first_Name,
-					last_Name,
-					email_
-				})
-			});
-			if (response.ok) {
-				alert('Submission Successful!');
-				const result = await response.json();
-				console.log('success:', result);
-			} else {
-				console.error('error:', response.statusText);
+		const form = e.currentTarget as HTMLFormElement; // Explicitly cast to HTMLFormElement
+		if(form){
+			const first_Name = form.firstName.value.trim();
+			const last_Name = form.lastName.value.trim();
+			const email_ = form.email.value.trim();
+			form.firstName.value='';
+			form.lastName.value='';
+			form.email.value='';
+
+			try {
+				const response = await fetch('/user', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({
+						first_Name,
+						last_Name,
+						email_
+					})
+				});
+				if (response.ok) {
+					alert('Submission Successful!');
+					const result = await response.json();
+					console.log('success:', result);
+				} else {
+					console.error('error:', response.statusText);
+				}
+			} catch (error) {
+				console.log(error);
 			}
-		} catch (error) {
-			console.log(error);
 		}
 	}
 </script>
 
-<div id="News" class="w-full h-full flex flex-col items-center justify-center md:py-[15rem] py-[7.5rem]">
+<div id="News" class="w-full h-full flex flex-col items-center justify-center py-[15vh]">
 	<div class="flex flex-col gap-2">
 		
-		<h10
-			class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center"
-		>
-		News
-			<div>
-				<p
-					class="text-xl sm:text-2xl md:text-3xl max-w-[1000px] mx-auto w-full italic font-light text-center"
-				>
-					Signup here to stay connected!
-				</p>
-				<Form
-					{formElements}
-					formClass="grid grid-cols-9 gap-y-0 grid-rows-4"
-					submitButtonId='formSubmit'
-					submitButtonClass="mt-5 row-start-5 col-start-4 col-span-3 text-[.4em]"
-					on:submit={formSubmit}
-				/>
-			</div>
-		</h10>
+		<h10 class={headingText}>News</h10>
+
+		<div class={headingText + "flex flex-col gap-4"}>
+			<p class="text-xl sm:text-2xl md:text-3xl max-w-[1000px] mx-auto w-full italic font-light text-center">
+				Signup here to stay connected!
+			</p>
+			<Form
+				{formElements}
+				formClass="grid grid-cols-9 gap-y-0 grid-rows-4"
+				submitButtonId='formSubmit'
+				submitButtonClass="border-2 rounded-xl py-2 mt-6 row-start-5 col-start-4 col-span-3 text-[.4em] cursor-pointer hover:opacity-50"
+				on:submit={formSubmit}
+			/>
+		</div>
 	</div>
 </div>

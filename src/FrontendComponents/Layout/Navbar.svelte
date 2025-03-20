@@ -32,11 +32,11 @@
 	];
 </script>
 
-<header class="flex flex-col relative w-full z-20">
+<header>
 	<Nav
 		routes={links}
-		navListClass="hidden lg:flex pr-8 text-2xl items-center gap-4 lg:gap-6 landscapeNavList"
-		navBarClass="mx-auto w-full flex items-center justify-between px-4 landscapeNavBar"
+		navListClass="hidden lg:flex text-2xl items-center gap-4 lg:gap-6"
+		navBarClass="mx-auto w-full flex items-center justify-between px-8"
 		navHeadingClass="lg:w-min w-full"
 		id="SvARIAnavBar"
 	>
@@ -44,8 +44,8 @@
 			<a href="/">
 				<img class="min-w-[250px] h-[125px] w-[250px] smallLogo" alt="SvARIA Logo" src="/SvAriaLogo.png" />
 			</a>
-			<button on:click={() => ($openModal = true)} class="lg:hidden" aria-label="Open Menu">
-				<div class="fa-solid fa-bars fa-2xl mt-6"></div>
+			<button on:click={() => ($openModal = true)} class="lg:hidden text-5xl text-black" aria-label="Open Menu">
+				<div class="fa-solid fa-bars fa-md"></div>
 			</button>
 		</div>
 	</Nav>

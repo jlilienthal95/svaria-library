@@ -1,5 +1,5 @@
 <script>
-    import Docs from "../Docs.svelte"
+    import Docs from "../../../FrontendComponents/ComponentsPage/Docs.svelte"
 
     let propsDetails = [
         "options (required): An array of objects which contains the options available for your end-user to select from. Each object in the array has several properties you can define as well. They are as follows:",

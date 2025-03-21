@@ -1,5 +1,5 @@
 <script>
-    import Docs from '../../../routes/components/Docs.svelte';
+    import Docs from '../../../FrontendComponents/ComponentsPage/Docs.svelte';
 
     const componentName = "Switch"
     const propsDetails = [

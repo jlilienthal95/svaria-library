@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@config "../tailwind.config.js";
+
 
 .noScroll {
     overflow: auto;
@@ -13,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #333;
 }
 
 * {

@@ -96,7 +96,7 @@
 		{
 			docs: SpinButtonDocs,
 			label: 'Spin Button',
-			source: 'https://svelte.dev/repl/be924261d3f041cb887584054989feef?version=4.2.18'
+			source: 'https://svelte.dev/playground/4e17f413de0c4adfbe18199f3afd761d?version=5.24.1'
 		},
 		{
 			docs: SwitchDocs,

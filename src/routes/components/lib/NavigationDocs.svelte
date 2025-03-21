@@ -1,5 +1,5 @@
 <script>
-	import Docs from '../Docs.svelte';
+	import Docs from '../../../FrontendComponents/ComponentsPage/Docs.svelte';
 	let propsDetails = [
 		'navBarClass: provides a class for the entire Navigation Bar. Tailwind can be used to adjust styling here',
 		'id (optional): Uniquely identifies the Navigation Bar, if undefined this will default to "navBar"',

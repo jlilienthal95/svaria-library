@@ -71,8 +71,8 @@
 	}
 </script>
 
-<div id="News" class="w-full h-full flex flex-col items-center justify-center py-[15vh]">
-	<div class="flex flex-col gap-2">
+<div id="News" class="w-full h-full flex flex-col items-center justify-center py-[10vh]">
+	<!-- <div class="flex flex-col gap-2">
 		
 		<h10 class={headingText}>News</h10>
 
@@ -88,5 +88,5 @@
 				on:submit={formSubmit}
 			/>
 		</div>
-	</div>
+	</div> -->
 </div>

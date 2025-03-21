@@ -1,5 +1,5 @@
 <script>
-	import Docs from '../Docs.svelte';
+	import Docs from '../../../FrontendComponents/ComponentsPage/Docs.svelte';
 
 	let docsProps = [
 		'toggle*: Must be set to the return of createToggle. See details',

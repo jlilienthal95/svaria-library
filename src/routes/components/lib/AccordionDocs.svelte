@@ -1,5 +1,5 @@
 <script>
-	import Docs from '../Docs.svelte';
+	import Docs from '../../../FrontendComponents/ComponentsPage/Docs.svelte';
 	let docsProps = [
 		'heading: Defines the heading that will be displayed on the drop-down button. If not specified, it will default to "SvARIA accordion component".',
 		'headingContainerClass (optional): Provides a class for the container around the content on the button. Tailwind can be used to adjust styling here.',

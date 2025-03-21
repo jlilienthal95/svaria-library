@@ -1,5 +1,5 @@
 <script>
-	import Docs from '../Docs.svelte';
+	import Docs from '../../../FrontendComponents/ComponentsPage/Docs.svelte';
 	let docsProps = [
 		'toastId (optional): Unique identifier for toast. Defaults to "toastId", should be overwritten.',
 		'toastContainerId (optional): Unique identifier for the toast container. Defaults to " ".',
